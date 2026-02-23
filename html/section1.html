@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>1. Información General del Proveedor</title>
+</head>
+<body>
+    <table class="header-table">
+        <tr>
+            <!-- Logo -->
+            <td class="logo">
+                <img src="../imags/logo.png" alt="Logo" width="80">
+            </td>
+
+            <!-- Título -->
+            <td class="titulo">
+                <h3>COMPRAS Y MANEJO DE PROVEEDORES</h3>
+                <h2>REGISTRO DE PROVEEDORES</h2>
+                <p>1. Información General del Proveedor</p>
+            </td>
+
+            <!-- Información derecha -->
+            <td class="info">
+                <p><strong>Versión:</strong> 001</p>
+                <p><strong>Fecha:</strong></p>
+                <p>23 de febrero de 2026</p>
+            </td>
+        </tr>
+    </table>
+    <form action="">
+        <input type="date" name="fecha_registro" id="fecha_registro" disabled>
+        <input type="radio" name="opcion" id="opcion1" value="opcion1">
+        <label for="opcion1">Incripción</label>
+        <input type="radio" name="opcion" id="opcion2" value="opcion2">
+        <label for="opcion2">Actualización de Datos</label>
+        <fieldset>
+            <legend>1. Información General del Proveedor</legend>
+            <label>Razón Social/Nombre: </label>
+            <input type="text" name="razon_social" id="razon_social"><br><br>
+
+            <label>NIT/CC: </label>
+            <input type="number" name="nit_cc" id="nit_cc">
+            <label>DV: </label>
+            <input type="number" name="dv" id="dv">
+            <label>Naturaleza Jurídica: </label>
+            <input type="radio" name="naturaleza_juridica" id="persona_natural" value="persona_natural">
+            <label for="persona_natural">Persona Natural</label>
+            <input type="radio" name="naturaleza_juridica" id="persona_juridica" value="persona_juridica">
+            <label for="persona_juridica">Persona Jurídica</label><br><br>
+
+            <label>Tipo de Sociedad (No aplica para persona natural): </label>
+            <select name="tipo_sociedad" id="tipo_sociedad">
+                <option value="">Seleccione</option>
+                <option value="sas">Sociedad Anónima</option>
+                <option value="ltda">Sociedad Limitada</option>
+                <option value="sa">Espresa Estatal</option>
+                <option value="otro">Empresa Unipersonal</option>
+                <option value="otro">Sociedad por Acciones Simplificada</option>
+                <option value="otro">Sucursal Colombia Empresa Extranjera</option>
+                <option value="otro">Empresa Extranjera</option>
+            </select>
+            <label>Otro: </label><input type="text" name="otro_tipo_sociedad" id="otro_tipo_sociedad"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sede Principal</legend>
+            <label>Dirección: </label>
+            <input type="text" name="direccion_sede_principal" id="direccion_sede_principal"><br><br>
+
+            <label>Ciudad: </label>
+            <input type="text" name="ciudad_sede_principal" id="ciudad_sede_principal">
+            <label>Departamento: </label>
+            <select name="departamento_sede_principal" id="departamento_sede_principal">
+                <option value="">Seleccione</option>
+                <option value="antioquia">Antioquia</option>
+                <option value="bogota">Bogotá</option>
+                <option value="caldas">Caldas</option>
+                <option value="cauca">Cauca</option>
+                <option value="choco">Chocó</option>
+                <option value="cordoba">Córdoba</option>
+                <option value="huila">Huila</option>
+                <option value="magdalena">Magdalena</option>
+                <option value="norte_de_santander">Norte de Santander</option>
+                <option value="quindio">Quindío</option>
+            </select>
+            <label>Pais: </label>
+            <select name="pais_sede_principal" id="pais_sede_principal">
+                <option value="">Seleccione</option>
+                <option value="colombia">Colombia</option>
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="mexico">México</option>
+                <option value="peru">Perú</option>
+                <option value="venezuela">Venezuela</option>
+            </select><br><br>
+
+            <label>Télefono (Principal): </label>
+            <input type="number" name="telefono_sede_principal" id="telefono_sede_principal">
+            <label>Celular: </label>
+            <input type="number" name="celular_sede_principal" id="celular_sede_principal"><br><br>
+
+            <label for="">Página Web: </label>
+            <input type="text" name="pagina_web_sede_principal" id="pagina_web_sede_principal">
+            <label for="">Email: </label>
+            <input type="email" name="email_sede_principal" id="email_sede_principal">
+            <label for="">Otro: </label>
+            <input type="text" name="otro_sede_principal" id="otro_sede_principal"><br><br>
+        </fieldset>
+
+        <button>Continuar</button>
+    </form>
+
+    <script>
+        document.getElementById('fecha_registro').valueAsDate = new Date();
+    </script>
+</body>
+</html>
