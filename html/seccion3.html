@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3.Información tributaria</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<table class="header-table">
+  <tr>
+    <!-- Logo -->
+    <td class="logo">
+      <img src="../imags/logo.png" alt="Logo" width="80">
+    </td>
+
+    <!-- Título -->
+    <td class="titulo">
+      <h3>COMPRAS Y MANEJO DE PROVEEDORES</h3>
+      <h2>REGISTRO DE PROVEEDORES</h2>
+      <p>3.Información tributaria</p>
+    </td>
+
+    <!-- Información derecha -->
+    <td class="info">
+      <p><strong>Versión:</strong> 001</p>
+      <p><strong>Fecha:</strong></p>
+      <p>23 de febrero de 2026</p>
+    </td>
+  </tr>
+</table>
+
+<form>
+  <fieldset>
+    <legend>3.Información tributaria</legend>
+    <table>
+      <td>
+        <label>Gran contribuyente:</label><br>
+        <label for="gcs">SI</label><input id="gcs" name="granContribuyecte" type="radio">
+        <label for="gcn">NO</label><input id="gcn" name="granContribuyecte" type="radio">
+        <br>
+        <label>Autorretenedor:</label><br>
+        <label for="auts">SI</label><input id="auts" name="autorretenedor" type="radio">
+        <label for="autn">NO</label><input id="autn" name="autorretenedor" type="radio">
+        <br>
+      </td>
+      <td>
+        <label>Responsable de IVA:</label><br>
+        <label for="ivas">SI</label><input id="ivas" name="respIva" type="radio">
+        <label for="ivan">NO</label><input id="ivan" name="respIva" type="radio">
+        <br>
+        <label>Declarante de renta:</label><br>
+        <label for="drs">SI</label><input id="drs" name="declaranteRenta" type="radio">
+        <label for="drn">NO</label><input id="drn" name="declaranteRenta" type="radio">
+        <br>
+      </td>
+      <td>
+        <label for="actp">Actividad principal:</label><input id="actp" type="text">
+        <label for="otra">Otras:</label><input id="otra" type="text">
+      </td>
+    </table>
+  </fieldset>
+  <button>Volver</button>
+  <button>Continuar</button>
+</form>
+
+</body>
+</html>
